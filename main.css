@@ -1,0 +1,270 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+    color: white;
+}
+
+
+.racing-sans-one-regular { /*Fonte Titulo*/
+    font-family: "Racing Sans One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.lexend-zetta { /*Fonte Textos*/
+    font-family: "Lexend Zetta", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+}
+
+/* ---------------------------------------Header------------------------------------------- */
+
+header {
+    padding: 16px 0;
+    background-color: #EDB82A;
+    color: white;
+    position: relative;
+}
+
+header h1 {
+    display: flex;
+    justify-content: center;
+    font-size: 45px;
+    outline-offset: 15px #EDB82A;;
+    background-color: #EDB82A;
+    font-family: "Racing Sans One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+header nav ul {
+    font-family: "Lexend Zetta", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    background-color: #EDB82A;
+}
+
+header nav li,
+header nav li a  {
+    padding: 10px 0;
+    margin-left: 13px;
+    font-size: 15px;
+    background-color: #EDB82A;
+    color: white;
+    text-decoration: none;
+}
+
+.menu{
+    list-style: none;
+    display: flex;
+    position: absolute;
+    right: 0px;
+    top: 25px; /* Ajuste conforme necessário */
+    margin-right: 40px; /* Espaço entre a borda da página e o menu */
+    background-color: #EDB82A;
+}
+
+
+/* ---------------------------------------Body------------------------------------------- */
+
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.container h2, 
+.container p{
+    font-family: "Lexend Zetta", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+}
+
+.container img,
+.container video {
+    height: 400px;
+}
+
+.container div {
+    max-width: 600px;
+}
+
+.initial {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 45vh;
+    margin-top: 35px;
+}
+
+#choice h2 { 
+    text-align: center;
+    margin-top: 20px;
+}
+
+.group h2{
+    font-family: "Racing Sans One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    background: linear-gradient(to right, transparent, #EDB82A, transparent);
+    color: white;
+    padding: 8px;
+    box-sizing: border-box;
+    text-align: center;
+    margin-bottom: 12px;
+    margin-top: 12px;
+}
+
+.group p{
+    text-align: center;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 16px;
+    padding: 16px;
+    font-family: "Lexend Zetta", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.cards ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 10px;
+    margin-top: 15px;
+}
+
+.cards li a {
+    font-family: "Lexend Zetta", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1000px;
+    text-decoration: none;
+    color: white;
+}
+
+.cards img {
+    border-radius: 20px;
+    max-width: 400px;
+    width: 450px; /* Define a largura fixa */
+    height: 200px; /* Define a altura fixa */
+}
+
+.cards h3 {
+    transition: transform 0.1s ease, font-size 0.1s ease;
+    margin-bottom: 5px;
+}
+
+.cards li a:hover h3 {
+    /* Adicione os estilos desejados para o texto (h3) quando o mouse está sobre o link */
+    /* Por exemplo, você pode ajustar o tamanho da fonte ou a cor do texto */
+    transform: scale(1.05) translateY(-7px); /* Aumenta o tamanho da fonte do texto em 18px quando o mouse está sobre o link */
+    color: #741012; /* Altera a cor do texto para azul quando o mouse está sobre o link */
+}
+
+.cards li a:hover h3 + img {
+    /* Adicione os estilos desejados para a imagem quando o mouse está sobre o link */
+    /* Por exemplo, você pode ajustar o tamanho da imagem ou a cor da borda */
+    transform: scale(1.05); /* Aumenta o tamanho da imagem em 10% quando o mouse está sobre o link */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+
+/* ---------------------------------------Contact------------------------------------------- */
+
+.social-links img{
+    height: 24px;
+}
+
+.social-links li {
+    display: inline;
+    margin-right: 8px;
+}
+
+.social-links li a{
+    text-decoration: none;
+}
+
+#contact .container {
+    display: block;
+}
+
+.contact-methods,
+.contact-methods h3 {
+    display: flex;
+    justify-content: center;
+}
+
+.contact-methods {
+    margin-bottom: 20px;
+}
+
+form input,
+form textarea,
+form button {
+    display: block;
+    width: 320px;
+    margin-bottom: 8px;
+    padding: 8px;
+}
+
+form textarea {
+    resize: none;
+    height: 180px;
+}
+
+form button {
+    background-color: #EDB82A;
+    color: #ecf0f1;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #741012;
+}
+
+input:focus, textarea:focus {
+    outline-color: #741012;
+}
+
+
+
+/* ---------------------------------------Footer------------------------------------------- */
+
+footer{
+    background-color: #222;
+    padding: 20px 0;
+    text-align: center;
+    color:white;
+}
